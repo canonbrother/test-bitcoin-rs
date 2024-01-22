@@ -1,0 +1,20 @@
+[package]
+name = "test-bitcoin-rs"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[patch.crates-io]
+# bitcoin = { git = "https://github.com/Jouzo/rust-bitcoin.git" }
+# bitcoin-io = { git = "https://github.com/Jouzo/rust-bitcoin.git" }
+bitcoin = { git = "https://github.com/canonbrother/jouzo-rust-bitcoin.git", features = [ "serde" ] }
+bitcoin-io = { git = "https://github.com/canonbrother/jouzo-rust-bitcoin.git", features = [ "serde" ] }
+
+[dependencies]
+anyhow = "1"
+hex = "0.4"
+log = "0.4"
+
+#### Ocean deps
+dftx-rs = { git = "https://github.com/Jouzo/dftx-rs.git" }
+bitcoin = "0.31"
