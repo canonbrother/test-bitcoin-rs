@@ -1,10 +1,10 @@
 {
   "configurations": [
       {
-          "name": "(gdb) Launch",
+          "name": "(lldb) Launch",
           "request": "launch",
           "type": "cppdbg",
-          "MIMode": "gdb",
+          "MIMode": "lldb",
           "program": "${workspaceFolder}/target/debug/test-bitcoin-rs",
           "args": [
           ],
